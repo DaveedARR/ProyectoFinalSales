@@ -27,7 +27,10 @@ namespace Sales.Infrastructure
             services.AddScoped<IVentaService, VentaService>();
             services.AddScoped<IFacturaRepository, FacturaRepository>();
             services.AddScoped<IFacturaService, FacturaService>();
-
+            services.AddScoped<IReporteRepository, ReporteRepository>();
+            services.AddScoped<IReporteService, ReporteService>();
+            services.AddScoped<ICajaRepository, CajaRepository>();
+            services.AddScoped<ICajaService, CajaService>();
             return services;
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sales.Application.Models
 {
-    public class VentasPorDiaReporteDTO
+    public class VentasPorDiaReporteDto
     {
         public DateTime Fecha { get; set; }
         public decimal TotalVentas { get; set; }

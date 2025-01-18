@@ -1,5 +1,88 @@
 [
   {
+    "ContainingType": "Sales.Api.Controllers.CajaController",
+    "Method": "Insertar",
+    "RelativePath": "api/Caja/AperturaCaja",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "caja",
+        "Type": "Sales.Domain.Entities.Caja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.CajaController",
+    "Method": "Cierre",
+    "RelativePath": "api/Caja/CierreCaja",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changeestado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.CajaController",
+    "Method": "Listar",
+    "RelativePath": "api/Caja/ListarCaja",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Sales.Domain.Entities.Caja, Sales.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.CajaController",
+    "Method": "Modificar",
+    "RelativePath": "api/Caja/ModificarCaja",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechaapertura",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechacierre",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "montoinicial",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "montofinal",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sales.Api.Controllers.FacturaController",
     "Method": "AnularFactura",
     "RelativePath": "api/Factura/AnularFactura",
@@ -35,6 +118,63 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.ReporteController",
+    "Method": "VentaPorDiaReporte",
+    "RelativePath": "api/Reporte/VentaPorDiaReporte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fecha_dia",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Sales.Application.Models.VentasPorDiaReporteDto, Sales.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.ReporteController",
+    "Method": "VentaPorRangoReporte",
+    "RelativePath": "api/Reporte/VentaPorRangoDeporte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fecha_inicial",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fecha_final",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Sales.Application.Models.VentasPorRangoReporteDto, Sales.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Sales.Api.Controllers.VentaController",
@@ -97,13 +237,13 @@
         "IsRequired": false
       },
       {
-        "Name": "EstadoVenta",
-        "Type": "System.String",
+        "Name": "TotalVenta",
+        "Type": "System.Decimal",
         "IsRequired": false
       },
       {
-        "Name": "Productos",
-        "Type": "System.Collections.Generic.List\u00601[[Sales.Application.Models.ProductoVentaDto, Sales.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Name": "EstadoVenta",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

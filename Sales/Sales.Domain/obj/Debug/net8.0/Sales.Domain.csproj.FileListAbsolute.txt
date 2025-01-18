@@ -10,3 +10,15 @@ C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.pdb
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\ref\Sales.Domain.dll
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.sourcelink.json
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\bin\Debug\net8.0\Sales.Domain.deps.json
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\bin\Debug\net8.0\Sales.Domain.dll
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\bin\Debug\net8.0\Sales.Domain.pdb
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.AssemblyInfoInputs.cache
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.AssemblyInfo.cs
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.csproj.CoreCompileInputs.cache
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.sourcelink.json
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.dll
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\refint\Sales.Domain.dll
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.pdb
+E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Domain\obj\Debug\net8.0\ref\Sales.Domain.dll
