@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "Sales.Api.Controllers.FacturaController",
+    "Method": "AnularFactura",
+    "RelativePath": "api/Factura/AnularFactura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idFactura",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.FacturaController",
+    "Method": "EmitirFactura",
+    "RelativePath": "api/Factura/EmitirFactura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NumeroFactura",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdVenta",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.VentaController",
+    "Method": "CancelarVenta",
+    "RelativePath": "api/Venta/CancelarVenta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idVenta",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.VentaController",
+    "Method": "ModificarVenta",
+    "RelativePath": "api/Venta/ModificarVenta",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IDVenta",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaVenta",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalVenta",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstadoVenta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sales.Api.Controllers.VentaController",
+    "Method": "RegistrarVenta",
+    "RelativePath": "api/Venta/RegistrarVenta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FechaVenta",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstadoVenta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Productos",
+        "Type": "System.Collections.Generic.List\u00601[[Sales.Application.Models.ProductoVentaDto, Sales.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

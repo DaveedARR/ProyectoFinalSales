@@ -1,0 +1,15 @@
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\bin\Debug\net8.0\Sales.Application.deps.json
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\bin\Debug\net8.0\Sales.Application.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\bin\Debug\net8.0\Sales.Application.pdb
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\bin\Debug\net8.0\Sales.Domain.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\bin\Debug\net8.0\Sales.Domain.pdb
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Ap.0A743CAB.Up2Date
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\refint\Sales.Application.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.pdb
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\ref\Sales.Application.dll

@@ -1,0 +1,11 @@
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\bin\Debug\net8.0\Sales.Domain.deps.json
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\bin\Debug\net8.0\Sales.Domain.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\bin\Debug\net8.0\Sales.Domain.pdb
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.AssemblyInfo.cs
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\refint\Sales.Domain.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\Sales.Domain.pdb
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Domain\obj\Debug\net8.0\ref\Sales.Domain.dll

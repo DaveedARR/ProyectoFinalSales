@@ -1,0 +1,249 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Sales.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Factura/EmitirFactura": {
+      "post": {
+        "tags": [
+          "Factura"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "IdVenta",
+                  "NumeroFactura"
+                ],
+                "type": "object",
+                "properties": {
+                  "NumeroFactura": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "IdVenta": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "NumeroFactura": {
+                  "style": "form"
+                },
+                "IdVenta": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Factura/AnularFactura": {
+      "post": {
+        "tags": [
+          "Factura"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "idFactura": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "idFactura": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Venta/RegistrarVenta": {
+      "post": {
+        "tags": [
+          "Venta"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "FechaVenta": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "EstadoVenta": {
+                    "type": "string"
+                  },
+                  "Productos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/ProductoVentaDto"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "FechaVenta": {
+                  "style": "form"
+                },
+                "EstadoVenta": {
+                  "style": "form"
+                },
+                "Productos": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Venta/CancelarVenta": {
+      "post": {
+        "tags": [
+          "Venta"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "idVenta": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "idVenta": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Venta/ModificarVenta": {
+      "put": {
+        "tags": [
+          "Venta"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "EstadoVenta",
+                  "FechaVenta",
+                  "TotalVenta"
+                ],
+                "type": "object",
+                "properties": {
+                  "IDVenta": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "FechaVenta": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "TotalVenta": {
+                    "minimum": 0,01,
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "EstadoVenta": {
+                    "maxLength": 20,
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "IDVenta": {
+                  "style": "form"
+                },
+                "FechaVenta": {
+                  "style": "form"
+                },
+                "TotalVenta": {
+                  "style": "form"
+                },
+                "EstadoVenta": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ProductoVentaDto": {
+        "type": "object",
+        "properties": {
+          "nombreProducto": {
+            "type": "string",
+            "nullable": true
+          },
+          "precioUnitario": {
+            "type": "number",
+            "format": "double"
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subtotal": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

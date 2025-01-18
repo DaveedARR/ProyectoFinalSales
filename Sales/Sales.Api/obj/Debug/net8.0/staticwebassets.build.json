@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "EGA+JQC5Kz5qdITx2kZ2USglFEgTny1ZXoeK7j+GmlM=",
+  "Source": "Sales.Api",
+  "BasePath": "_content/Sales.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
