@@ -22,13 +22,5 @@ namespace Sales.Api.Controllers
             var result = await _facturaService.EmitirFactura(emitirFacturaDto);
             return result ? Ok("Factura emitida exitosamente") : BadRequest("No se pudo emitir la factura");
         }
-
-        [HttpPost("AnularFactura")]
-        public async Task<ActionResult> AnularFactura([FromForm] int idFactura)
-        {
-            var result = await _facturaService.AnularFactura(idFactura);
-            return result ? Ok("Factura anulada exitosamente") : BadRequest("No se pudo anular la factura");
-        }
-
     }
 }

@@ -10,6 +10,5 @@ namespace Sales.Application.Contracts.Repositories
     public interface IFacturaRepository
     {
         Task<bool> EmitirFactura(EmitirFacturaDto emitirFacturaDto);
-        Task<bool> AnularFactura(int idFactura);
     }
 }
