@@ -12,12 +12,13 @@ namespace Sales.Domain.Entities
         [Key]
         public int IDCaja { get; set; }
         [Required]
-        public DateTime FechaApertura { get; set; } 
+        public DateTime FechaApertura { get; set; }
         public DateTime? FechaCierre { get; set; }
         [Required]
-        public decimal MontoInicial { get; set; } 
+        public decimal MontoInicial { get; set; }
         public decimal? MontoFinal { get; set; }
         [Required]
-        public string EstadoCaja { get; set; } = string.Empty;  
+        public string EstadoCaja { get; set; } = string.Empty;
+        public ICollection<CajaDetalle>? CajaDetalles { get; set; }
     }
 }

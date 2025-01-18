@@ -13,3 +13,4 @@ C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\n
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\refint\Sales.Application.dll
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.pdb
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\ref\Sales.Application.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Application\obj\Debug\net8.0\Sales.Application.sourcelink.json

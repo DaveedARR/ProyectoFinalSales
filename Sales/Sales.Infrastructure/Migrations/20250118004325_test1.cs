@@ -45,6 +45,30 @@ namespace Sales.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CajaDetalles",
+                columns: table => new
+                {
+                    IdCajaDetalle = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    DetalleMovimiento = table.Column<string>(type: "text", nullable: false),
+                    CantidadIngreso = table.Column<decimal>(type: "numeric", nullable: false),
+                    CantidadGasto = table.Column<decimal>(type: "numeric", nullable: false),
+                    TipoPago = table.Column<string>(type: "text", nullable: false),
+                    FechaMovimiento = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    IdCaja = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CajaDetalles", x => x.IdCajaDetalle);
+                    table.ForeignKey(
+                        name: "FK_CajaDetalles_Cajas_IdCaja",
+                        column: x => x.IdCaja,
+                        principalTable: "Cajas",
+                        principalColumn: "IDCaja",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Facturas",
                 columns: table => new
                 {
@@ -67,6 +91,11 @@ namespace Sales.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_CajaDetalles_IdCaja",
+                table: "CajaDetalles",
+                column: "IdCaja");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Facturas_IdVenta",
                 table: "Facturas",
                 column: "IdVenta");
@@ -76,10 +105,13 @@ namespace Sales.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Cajas");
+                name: "CajaDetalles");
 
             migrationBuilder.DropTable(
                 name: "Facturas");
+
+            migrationBuilder.DropTable(
+                name: "Cajas");
 
             migrationBuilder.DropTable(
                 name: "Ventas");
