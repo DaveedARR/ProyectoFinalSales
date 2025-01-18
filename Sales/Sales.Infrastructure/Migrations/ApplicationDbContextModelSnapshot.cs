@@ -51,6 +51,43 @@ namespace Sales.Infrastructure.Migrations
                     b.ToTable("Cajas");
                 });
 
+            modelBuilder.Entity("Sales.Domain.Entities.CajaDetalle", b =>
+                {
+                    b.Property<int>("IdCajaDetalle")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdCajaDetalle"));
+
+                    b.Property<decimal?>("CantidadGasto")
+                        .IsRequired()
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal?>("CantidadIngreso")
+                        .IsRequired()
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("DetalleMovimiento")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("FechaMovimiento")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("IdCaja")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("TipoPago")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("IdCajaDetalle");
+
+                    b.HasIndex("IdCaja");
+
+                    b.ToTable("CajaDetalles");
+                });
+
             modelBuilder.Entity("Sales.Domain.Entities.Factura", b =>
                 {
                     b.Property<int>("IDFactura")
@@ -103,6 +140,17 @@ namespace Sales.Infrastructure.Migrations
                     b.ToTable("Ventas");
                 });
 
+            modelBuilder.Entity("Sales.Domain.Entities.CajaDetalle", b =>
+                {
+                    b.HasOne("Sales.Domain.Entities.Caja", "Caja")
+                        .WithMany("CajaDetalles")
+                        .HasForeignKey("IdCaja")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Caja");
+                });
+
             modelBuilder.Entity("Sales.Domain.Entities.Factura", b =>
                 {
                     b.HasOne("Sales.Domain.Entities.Venta", "Venta")
@@ -112,6 +160,11 @@ namespace Sales.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Venta");
+                });
+
+            modelBuilder.Entity("Sales.Domain.Entities.Caja", b =>
+                {
+                    b.Navigation("CajaDetalles");
                 });
 #pragma warning restore 612, 618
         }

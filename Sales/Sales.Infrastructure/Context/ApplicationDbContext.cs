@@ -10,5 +10,6 @@ namespace Sales.Infrastructure.Context
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<Caja> Cajas { get; set; }
+        public DbSet<CajaDetalle> CajaDetalles { get; set; }
     }
 }

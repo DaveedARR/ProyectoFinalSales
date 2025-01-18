@@ -17,3 +17,4 @@ C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Infrastructure\obj\Debu
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Infrastructure\obj\Debug\net8.0\Sales.Infrastructure.pdb
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Infrastructure\obj\Debug\net8.0\Sales.Infrastructure.genruntimeconfig.cache
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Infrastructure\obj\Debug\net8.0\ref\Sales.Infrastructure.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Infrastructure\obj\Debug\net8.0\Sales.Infrastructure.sourcelink.json

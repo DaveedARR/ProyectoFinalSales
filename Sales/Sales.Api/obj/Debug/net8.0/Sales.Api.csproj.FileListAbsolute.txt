@@ -153,3 +153,4 @@ C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Api\obj\Debug\net8.0\re
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.pdb
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.genruntimeconfig.cache
 C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Api\obj\Debug\net8.0\ref\Sales.Api.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.sourcelink.json
