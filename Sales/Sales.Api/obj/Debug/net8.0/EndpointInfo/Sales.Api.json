@@ -5,6 +5,142 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Caja/ListarCaja": {
+      "get": {
+        "tags": [
+          "Caja"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Caja"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Caja"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Caja"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Caja/AperturaCaja": {
+      "post": {
+        "tags": [
+          "Caja"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Caja"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Caja"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Caja"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Caja/ModificarCaja": {
+      "put": {
+        "tags": [
+          "Caja"
+        ],
+        "parameters": [
+          {
+            "name": "fechaapertura",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "fechacierre",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "montoinicial",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "montofinal",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Caja/CierreCaja": {
+      "post": {
+        "tags": [
+          "Caja"
+        ],
+        "parameters": [
+          {
+            "name": "changeestado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Factura/EmitirFactura": {
       "post": {
         "tags": [
@@ -80,6 +216,110 @@
         }
       }
     },
+    "/api/Reporte/VentaPorDiaReporte": {
+      "get": {
+        "tags": [
+          "Reporte"
+        ],
+        "parameters": [
+          {
+            "name": "fecha_dia",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VentasPorDiaReporteDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VentasPorDiaReporteDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VentasPorDiaReporteDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reporte/VentaPorRangoDeporte": {
+      "get": {
+        "tags": [
+          "Reporte"
+        ],
+        "parameters": [
+          {
+            "name": "fecha_inicial",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "fecha_final",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VentasPorRangoReporteDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VentasPorRangoReporteDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VentasPorRangoReporteDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Venta/RegistrarVenta": {
       "post": {
         "tags": [
@@ -89,20 +329,25 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+                "required": [
+                  "EstadoVenta",
+                  "FechaVenta",
+                  "TotalVenta"
+                ],
                 "type": "object",
                 "properties": {
                   "FechaVenta": {
                     "type": "string",
                     "format": "date-time"
                   },
-                  "EstadoVenta": {
-                    "type": "string"
+                  "TotalVenta": {
+                    "minimum": 0,01,
+                    "type": "number",
+                    "format": "double"
                   },
-                  "Productos": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/ProductoVentaDto"
-                    }
+                  "EstadoVenta": {
+                    "maxLength": 20,
+                    "type": "string"
                   }
                 }
               },
@@ -110,10 +355,10 @@
                 "FechaVenta": {
                   "style": "form"
                 },
-                "EstadoVenta": {
+                "TotalVenta": {
                   "style": "form"
                 },
-                "Productos": {
+                "EstadoVenta": {
                   "style": "form"
                 }
               }
@@ -221,25 +466,126 @@
   },
   "components": {
     "schemas": {
-      "ProductoVentaDto": {
+      "Caja": {
+        "required": [
+          "estadoCaja",
+          "fechaApertura",
+          "montoInicial"
+        ],
         "type": "object",
         "properties": {
-          "nombreProducto": {
-            "type": "string",
-            "nullable": true
-          },
-          "precioUnitario": {
-            "type": "number",
-            "format": "double"
-          },
-          "cantidad": {
+          "idCaja": {
             "type": "integer",
             "format": "int32"
           },
-          "subtotal": {
+          "fechaApertura": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaCierre": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "montoInicial": {
+            "type": "number",
+            "format": "double"
+          },
+          "montoFinal": {
             "type": "number",
             "format": "double",
-            "readOnly": true
+            "nullable": true
+          },
+          "estadoCaja": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cajaDetalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CajaDetalle"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CajaDetalle": {
+        "required": [
+          "cantidadGasto",
+          "cantidadIngreso",
+          "detalleMovimiento",
+          "fechaMovimiento",
+          "tipoPago"
+        ],
+        "type": "object",
+        "properties": {
+          "idCajaDetalle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detalleMovimiento": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cantidadIngreso": {
+            "type": "number",
+            "format": "double"
+          },
+          "cantidadGasto": {
+            "type": "number",
+            "format": "double"
+          },
+          "tipoPago": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "fechaMovimiento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idCaja": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "caja": {
+            "$ref": "#/components/schemas/Caja"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VentasPorDiaReporteDto": {
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "totalVentas": {
+            "type": "number",
+            "format": "double"
+          },
+          "estadoVenta": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VentasPorRangoReporteDto": {
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "totalVentas": {
+            "type": "number",
+            "format": "double"
+          },
+          "numeroDeVentas": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
