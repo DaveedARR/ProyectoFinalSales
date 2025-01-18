@@ -1,46 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\",
+  "WorkspaceRootPath": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\models\\ventaspordiareportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\models\\ventaspordiareportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|solutionrelative:sales\\sales.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\models\\ventasporrangoreportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\models\\ventasporrangoreportedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83E47FCC-64C4-49AB-9793-451E81614AD0}|Sales\\Sales.Domain\\Sales.Domain.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.domain\\entities\\cajadetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\models\\registrarventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\models\\registrarventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\models\\modificarventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\models\\modificarventadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\models\\emitirfacturadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\models\\emitirfacturadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E47FCC-64C4-49AB-9793-451E81614AD0}|Sales\\Sales.Domain\\Sales.Domain.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.domain\\entities\\cajadetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83E47FCC-64C4-49AB-9793-451E81614AD0}|Sales\\Sales.Domain\\Sales.Domain.csproj|solutionrelative:sales\\sales.domain\\entities\\cajadetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83E47FCC-64C4-49AB-9793-451E81614AD0}|Sales\\Sales.Domain\\Sales.Domain.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.domain\\entities\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.infrastructure\\migrations\\20250118004325_test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|solutionrelative:sales\\sales.infrastructure\\migrations\\20250118004325_test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|solutionrelative:sales\\sales.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E47FCC-64C4-49AB-9793-451E81614AD0}|Sales\\Sales.Domain\\Sales.Domain.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.domain\\entities\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83E47FCC-64C4-49AB-9793-451E81614AD0}|Sales\\Sales.Domain\\Sales.Domain.csproj|solutionrelative:sales\\sales.domain\\entities\\caja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.application\\services\\facturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\services\\facturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\services\\facturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.application\\contracts\\services\\ifacturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\contracts\\services\\ifacturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\contracts\\services\\ifacturaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.infrastructure\\repository\\facturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.infrastructure\\repository\\facturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D1A84D-5FAA-4DDD-AA98-978680F2A67F}|Sales\\Sales.Infrastructure\\Sales.Infrastructure.csproj|solutionrelative:sales\\sales.infrastructure\\repository\\facturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.application\\contracts\\repositories\\ifacturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.application\\contracts\\repositories\\ifacturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\contracts\\repositories\\ifacturarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F61455-E34E-4EFC-8D7E-303158F3F783}|Sales\\Sales.Api\\Sales.Api.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.api\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6F61455-E34E-4EFC-8D7E-303158F3F783}|Sales\\Sales.Api\\Sales.Api.csproj|e:\\files\\university\\mod3\\proyectofinalsales\\sales\\sales.api\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6F61455-E34E-4EFC-8D7E-303158F3F783}|Sales\\Sales.Api\\Sales.Api.csproj|solutionrelative:sales\\sales.api\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|c:\\users\\david\\source\\repos\\proyectofinalis2\\sales\\sales.application\\models\\emitirfacturadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F31F51E-5ACE-49C3-A17B-75C1BC128BDC}|Sales\\Sales.Application\\Sales.Application.csproj|solutionrelative:sales\\sales.application\\models\\emitirfacturadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,15 +66,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistrarVentaDto.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\RegistrarVentaDto.cs",
+              "RelativeDocumentMoniker": "Sales\\Sales.Application\\Models\\RegistrarVentaDto.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\RegistrarVentaDto.cs",
+              "RelativeToolTip": "Sales\\Sales.Application\\Models\\RegistrarVentaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T00:59:06.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentasPorRangoReporteDTO.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\VentasPorRangoReporteDTO.cs",
+              "RelativeDocumentMoniker": "Sales\\Sales.Application\\Models\\VentasPorRangoReporteDTO.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\VentasPorRangoReporteDTO.cs",
+              "RelativeToolTip": "Sales\\Sales.Application\\Models\\VentasPorRangoReporteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T00:57:31.003Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VentasPorDiaReporteDTO.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\VentasPorDiaReporteDTO.cs",
+              "RelativeDocumentMoniker": "Sales\\Sales.Application\\Models\\VentasPorDiaReporteDTO.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\VentasPorDiaReporteDTO.cs",
+              "RelativeToolTip": "Sales\\Sales.Application\\Models\\VentasPorDiaReporteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T00:55:37.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModificarVentaDto.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\ModificarVentaDto.cs",
+              "RelativeDocumentMoniker": "Sales\\Sales.Application\\Models\\ModificarVentaDto.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\ModificarVentaDto.cs",
+              "RelativeToolTip": "Sales\\Sales.Application\\Models\\ModificarVentaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T00:54:41.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "20250118004325_test1.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs",
               "RelativeToolTip": "Sales\\Sales.Infrastructure\\Migrations\\20250118004325_test1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -67,62 +143,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Infrastructure\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Infrastructure\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Infrastructure\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "Sales\\Sales.Infrastructure\\Context\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T00:41:56.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T00:41:56.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CajaDetalle.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Domain\\Entities\\CajaDetalle.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Domain\\Entities\\CajaDetalle.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Domain\\Entities\\CajaDetalle.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Domain\\Entities\\CajaDetalle.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Domain\\Entities\\CajaDetalle.cs",
               "RelativeToolTip": "Sales\\Sales.Domain\\Entities\\CajaDetalle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T00:41:00.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Caja.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Domain\\Entities\\Caja.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Domain\\Entities\\Caja.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Domain\\Entities\\Caja.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Domain\\Entities\\Caja.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Domain\\Entities\\Caja.cs",
               "RelativeToolTip": "Sales\\Sales.Domain\\Entities\\Caja.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T00:40:41.933Z",
+              "WhenOpened": "2025-01-18T00:40:41.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmitirFacturaDto.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
+              "RelativeDocumentMoniker": "Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
+              "RelativeToolTip": "Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T19:08:37.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmitirFacturaDto.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
-              "RelativeDocumentMoniker": "Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
-              "RelativeToolTip": "Sales\\Sales.Application\\Models\\EmitirFacturaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:08:37.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "FacturaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Repository\\FacturaRepository.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Infrastructure\\Repository\\FacturaRepository.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Infrastructure\\Repository\\FacturaRepository.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Infrastructure\\Repository\\FacturaRepository.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Infrastructure\\Repository\\FacturaRepository.cs",
               "RelativeToolTip": "Sales\\Sales.Infrastructure\\Repository\\FacturaRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,24 +205,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "FacturaService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Services\\FacturaService.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Services\\FacturaService.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Application\\Services\\FacturaService.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Services\\FacturaService.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Services\\FacturaService.cs",
               "RelativeToolTip": "Sales\\Sales.Application\\Services\\FacturaService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:07:32.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T19:07:32.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "IFacturaService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Contracts\\Services\\IFacturaService.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Contracts\\Services\\IFacturaService.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Application\\Contracts\\Services\\IFacturaService.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Contracts\\Services\\IFacturaService.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Contracts\\Services\\IFacturaService.cs",
               "RelativeToolTip": "Sales\\Sales.Application\\Contracts\\Services\\IFacturaService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,11 +229,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "IFacturaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Contracts\\Repositories\\IFacturaRepository.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Contracts\\Repositories\\IFacturaRepository.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Application\\Contracts\\Repositories\\IFacturaRepository.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Contracts\\Repositories\\IFacturaRepository.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Contracts\\Repositories\\IFacturaRepository.cs",
               "RelativeToolTip": "Sales\\Sales.Application\\Contracts\\Repositories\\IFacturaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -167,11 +241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "FacturaController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Api\\Controllers\\FacturaController.cs",
+              "DocumentMoniker": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Api\\Controllers\\FacturaController.cs",
               "RelativeDocumentMoniker": "Sales\\Sales.Api\\Controllers\\FacturaController.cs",
-              "ToolTip": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Api\\Controllers\\FacturaController.cs",
+              "ToolTip": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Api\\Controllers\\FacturaController.cs",
               "RelativeToolTip": "Sales\\Sales.Api\\Controllers\\FacturaController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
