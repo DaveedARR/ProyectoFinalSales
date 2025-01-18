@@ -36,6 +36,18 @@ namespace Sales.Infrastructure.Repository
             _context.Facturas.Add(factura);
             await _context.SaveChangesAsync();
             return true;
-        } 
+        }
+
+        public async Task<bool> AnularFactura(int idFactura)
+        {
+            var factura = await _context.Facturas.FindAsync(idFactura);
+            if (factura == null || factura.EstadoFactura == "Anulada") return false;
+
+            factura.EstadoFactura = "Anulada";
+            _context.Facturas.Update(factura);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
     }
 }
