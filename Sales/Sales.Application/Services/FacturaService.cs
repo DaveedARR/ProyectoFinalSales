@@ -22,5 +22,10 @@ namespace Sales.Application.Services
         {
             return await _repository.EmitirFactura(emitirFacturaDto);
         }
+
+        public async Task<bool> AnularFactura(int idFactura)
+        {
+            return await _repository.AnularFactura(idFactura);
+        }
     }
 }
