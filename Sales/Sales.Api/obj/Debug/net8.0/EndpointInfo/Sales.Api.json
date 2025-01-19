@@ -216,6 +216,37 @@
         }
       }
     },
+    "/api/Login/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Reporte/VentaPorDiaReporte": {
       "get": {
         "tags": [
@@ -329,11 +360,6 @@
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": [
-                  "EstadoVenta",
-                  "FechaVenta",
-                  "TotalVenta"
-                ],
                 "type": "object",
                 "properties": {
                   "FechaVenta": {
@@ -346,7 +372,6 @@
                     "format": "double"
                   },
                   "EstadoVenta": {
-                    "maxLength": 20,
                     "type": "string"
                   }
                 }
@@ -550,6 +575,20 @@
           },
           "caja": {
             "$ref": "#/components/schemas/Caja"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Request": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -120,6 +120,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Sales.Api.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sales.Infrastructure.Gateway.Identity.Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sales.Api.Controllers.ReporteController",
     "Method": "VentaPorDiaReporte",
     "RelativePath": "api/Reporte/VentaPorDiaReporte",

@@ -5,6 +5,7 @@ using Sales.Application.Contracts.Repositories;
 using Sales.Application.Contracts.Services;
 using Sales.Application.Services;
 using Sales.Infrastructure.Context;
+using Sales.Infrastructure.Gateway.Identity;
 using Sales.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace Sales.Infrastructure
             services.AddScoped<IReporteService, ReporteService>();
             services.AddScoped<ICajaRepository, CajaRepository>();
             services.AddScoped<ICajaService, CajaService>();
+            services.AddScoped<IdentityService>();
             return services;
         }
     }
