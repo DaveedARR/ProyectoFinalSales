@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aiexp\\.nuget\\packages\\": {},
+    "C:\\Users\\david\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Sales.Application.csproj",
+      "projectUniqueName": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Sales.Application.csproj",
       "projectName": "Sales.Application",
-      "projectPath": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\Sales.Application.csproj",
-      "packagesPath": "C:\\Users\\aiexp\\.nuget\\packages\\",
-      "outputPath": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Application\\obj\\",
+      "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\Sales.Application.csproj",
+      "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aiexp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +59,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Domain\\Sales.Domain.csproj": {
-              "projectPath": "E:\\FILES\\University\\Mod3\\ProyectoFinalSales\\Sales\\Sales.Domain\\Sales.Domain.csproj"
+            "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Domain\\Sales.Domain.csproj": {
+              "projectPath": "C:\\Users\\david\\source\\repos\\ProyectoFinalIS2\\Sales\\Sales.Domain\\Sales.Domain.csproj"
             }
           }
         }

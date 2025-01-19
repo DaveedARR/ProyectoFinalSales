@@ -14,9 +14,13 @@ namespace Sales.Domain.Entities
         [Required]
         public DateTime FechaVenta { get; set; }
         [Required]
-        public decimal TotalVenta { get; set; }
-        [Required]
         [MaxLength(20)]
         public string EstadoVenta { get; set; } = string.Empty;
+        [Required]
+        public int Cantidad { get; set; }
+        [Required]
+        public decimal TotalVenta { get; set; }
+        [Required]
+        public int IdProducto { get; set; }
     }
 }
