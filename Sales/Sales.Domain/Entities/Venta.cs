@@ -17,10 +17,14 @@ namespace Sales.Domain.Entities
         [MaxLength(20)]
         public string EstadoVenta { get; set; } = string.Empty;
         [Required]
+        public int IdProducto { get; set; }
+        [Required]
         public int Cantidad { get; set; }
         [Required]
         public decimal TotalVenta { get; set; }
-        [Required]
-        public int IdProducto { get; set; }
+
+       
+       
+       
     }
 }

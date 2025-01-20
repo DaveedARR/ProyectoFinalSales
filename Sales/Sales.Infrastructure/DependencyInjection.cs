@@ -6,6 +6,7 @@ using Sales.Application.Contracts.Services;
 using Sales.Application.Services;
 using Sales.Infrastructure.Context;
 using Sales.Infrastructure.Gateway.Identity;
+using Sales.Infrastructure.Gateway.Payment;
 using Sales.Infrastructure.Repository;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,7 @@ namespace Sales.Infrastructure
             services.AddScoped<ICajaRepository, CajaRepository>();
             services.AddScoped<ICajaService, CajaService>();
             services.AddScoped<IdentityService>();
+            services.AddScoped<PaymentService>();
             return services;
         }
     }

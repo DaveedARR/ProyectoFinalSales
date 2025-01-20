@@ -8,9 +8,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "caja",
-        "Type": "Sales.Domain.Entities.Caja",
-        "IsRequired": true
+        "Name": "FechaApertura",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaCierre",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "MontoInicial",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstadoCaja",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -60,23 +75,33 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fechaapertura",
+        "Name": "IdCaja",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaApertura",
         "Type": "System.DateTime",
         "IsRequired": false
       },
       {
-        "Name": "fechacierre",
+        "Name": "FechaCierre",
         "Type": "System.DateTime",
         "IsRequired": false
       },
       {
-        "Name": "montoinicial",
+        "Name": "MontoInicial",
         "Type": "System.Decimal",
         "IsRequired": false
       },
       {
-        "Name": "montofinal",
+        "Name": "MontoFinal",
         "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstadoCaja",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -222,18 +247,23 @@
         "IsRequired": false
       },
       {
-        "Name": "FechaVenta",
-        "Type": "System.DateTime",
+        "Name": "EstadoVenta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProducto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cantidad",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
         "Name": "TotalVenta",
         "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "EstadoVenta",
-        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -253,13 +283,23 @@
         "IsRequired": false
       },
       {
-        "Name": "TotalVenta",
-        "Type": "System.Decimal",
+        "Name": "EstadoVenta",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "EstadoVenta",
-        "Type": "System.String",
+        "Name": "IdProducto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cantidad",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalVenta",
+        "Type": "System.Decimal",
         "IsRequired": false
       }
     ],

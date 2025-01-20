@@ -3,6 +3,7 @@ using Sales.Application.Contracts.Repositories;
 using Sales.Application.Models;
 using Sales.Domain.Entities;
 using Sales.Infrastructure.Context;
+using Sales.Infrastructure.Gateway.Payment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +15,29 @@ namespace Sales.Infrastructure.Repository
     public class VentaRepository : IVentaRepository
     {
         private readonly ApplicationDbContext _context;
+        private readonly PaymentService _paymentService;
 
-        public VentaRepository(ApplicationDbContext context)
+        public VentaRepository(ApplicationDbContext context, PaymentService paymentService)
         {
             _context = context;
+            _paymentService = paymentService;
         }
+
+
+        public async Task<bool> RegistrarPago(PagoDto pago)
+        {
+            try
+            {
+                await _paymentService.RegisterPaymentAsync(pago);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
 
         public async Task<bool> RegistrarVenta(Venta venta)
         {
@@ -26,6 +45,9 @@ namespace Sales.Infrastructure.Repository
             {
                 await _context.Ventas.AddAsync(venta);
                 await _context.SaveChangesAsync();
+
+                
+
                 return true;
             }
             catch
@@ -50,9 +72,10 @@ namespace Sales.Infrastructure.Repository
             var result = await _context.Ventas.FindAsync(modificarVentaDto!.IDVenta);
             if (result == null) return false;
 
-            result.FechaVenta = modificarVentaDto.FechaVenta;
-            result.TotalVenta = modificarVentaDto.TotalVenta;
             result.EstadoVenta = modificarVentaDto.EstadoVenta;
+            result.IdProducto = modificarVentaDto.IdProducto;
+            result.Cantidad = modificarVentaDto.Cantidad;
+            result.TotalVenta = modificarVentaDto.TotalVenta;
 
             _context.Ventas.Update(result);
             await _context.SaveChangesAsync();
