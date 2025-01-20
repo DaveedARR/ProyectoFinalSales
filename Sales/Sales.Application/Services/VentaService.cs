@@ -2,6 +2,7 @@
 using Sales.Application.Contracts.Services;
 using Sales.Application.Models;
 using Sales.Domain.Entities;
+using Sales.Infrastructure.Gateway.Payment;
 
 namespace Sales.Application.Services
 {
@@ -16,13 +17,46 @@ namespace Sales.Application.Services
 
         public async Task<bool> RegistrarVenta(RegistrarVentaDto ventaDto)
         {
-            var venta = new Venta
+
+            try
             {
-                FechaVenta = ventaDto.FechaVenta,
-                TotalVenta = ventaDto.TotalVenta,
-                EstadoVenta = ventaDto.EstadoVenta
-            };
-            return await _repository.RegistrarVenta(venta);
+                var venta = new Venta
+                {
+                    FechaVenta = ventaDto.FechaVenta,
+                    TotalVenta = ventaDto.TotalVenta,
+                    EstadoVenta = ventaDto.EstadoVenta
+                };
+                await _repository.RegistrarVenta(venta);
+                
+                
+                PagoDto pago = new PagoDto
+                {
+                    DescripcionPago = "asdas ",
+                    FechaPago = DateTime.UtcNow,
+                    IdEstadoPago = 1,
+                    IdTipoPago = 1,
+                    IdUsuario = 1,
+                    
+                    IdVenta =1,
+                    Monto = (int)venta.TotalVenta,
+                    ReferenciaPago = "referencia"
+
+                };
+
+                await _repository.RegistrarPago(pago);
+
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+              
+            }
+          
+
+             
+            return false ;
         }
 
         public async Task<bool> CancelarVenta(int idVenta)

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Sales.Application.Contracts.Repositories;
+using Sales.Application.Models;
 using Sales.Domain.Entities;
 using Sales.Infrastructure.Context;
 
@@ -31,20 +32,21 @@ namespace Sales.Infrastructure.Repository
             }
         }
 
-        public async Task<bool> ModificarCaja(DateTime fechaapertura, DateTime fechacierre, decimal montoinicial, decimal montofinal)
+        public async Task<bool> ModificarCaja(ModificarCajaDto modificarCajaDto)
         {
-            var caja = await _context.Cajas.FirstOrDefaultAsync();
+            var caja = await _context.Cajas.FindAsync(modificarCajaDto!.IdCaja);
 
             if (caja == null)
             {
                 throw new Exception("No se encontró ningún registro en la tabla Cajas.");
             }
 
-            caja.FechaApertura = fechaapertura;
-            caja.FechaCierre = fechacierre;
-            caja.MontoInicial = montoinicial;
-            caja.MontoFinal = montofinal;
+            caja.FechaApertura = modificarCajaDto.FechaApertura;
+            caja.FechaCierre = modificarCajaDto.FechaCierre;
+            caja.MontoInicial = modificarCajaDto.MontoInicial;
+            caja.MontoFinal = modificarCajaDto.MontoFinal;
 
+            _context.Cajas.Update(caja);
             await _context.SaveChangesAsync();
 
             return true;

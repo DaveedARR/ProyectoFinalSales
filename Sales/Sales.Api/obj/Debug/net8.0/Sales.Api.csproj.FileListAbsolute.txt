@@ -310,3 +310,4 @@ E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Api\obj\Debug\net8.0\ref
 E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.pdb
 E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Api\obj\Debug\net8.0\Sales.Api.genruntimeconfig.cache
 E:\FILES\University\Mod3\ProyectoFinalSales\Sales\Sales.Api\obj\Debug\net8.0\ref\Sales.Api.dll
+C:\Users\david\source\repos\ProyectoFinalIS2\Sales\Sales.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -50,19 +50,40 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/Caja"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Caja"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Caja"
+                "type": "object",
+                "properties": {
+                  "FechaApertura": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FechaCierre": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "MontoInicial": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "EstadoCaja": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "FechaApertura": {
+                  "style": "form"
+                },
+                "FechaCierre": {
+                  "style": "form"
+                },
+                "MontoInicial": {
+                  "style": "form"
+                },
+                "EstadoCaja": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -79,40 +100,60 @@
         "tags": [
           "Caja"
         ],
-        "parameters": [
-          {
-            "name": "fechaapertura",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "fechacierre",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "montoinicial",
-            "in": "query",
-            "schema": {
-              "type": "number",
-              "format": "double"
-            }
-          },
-          {
-            "name": "montofinal",
-            "in": "query",
-            "schema": {
-              "type": "number",
-              "format": "double"
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "IdCaja": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "FechaApertura": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FechaCierre": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "MontoInicial": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "MontoFinal": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "EstadoCaja": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "IdCaja": {
+                  "style": "form"
+                },
+                "FechaApertura": {
+                  "style": "form"
+                },
+                "FechaCierre": {
+                  "style": "form"
+                },
+                "MontoInicial": {
+                  "style": "form"
+                },
+                "MontoFinal": {
+                  "style": "form"
+                },
+                "EstadoCaja": {
+                  "style": "form"
+                }
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -150,10 +191,6 @@
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": [
-                  "IdVenta",
-                  "NumeroFactura"
-                ],
                 "type": "object",
                 "properties": {
                   "NumeroFactura": {
@@ -366,13 +403,20 @@
                     "type": "string",
                     "format": "date-time"
                   },
-                  "TotalVenta": {
-                    "minimum": 0,01,
-                    "type": "number",
-                    "format": "double"
-                  },
                   "EstadoVenta": {
                     "type": "string"
+                  },
+                  "IdProducto": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Cantidad": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "TotalVenta": {
+                    "type": "number",
+                    "format": "double"
                   }
                 }
               },
@@ -380,10 +424,16 @@
                 "FechaVenta": {
                   "style": "form"
                 },
-                "TotalVenta": {
+                "EstadoVenta": {
                   "style": "form"
                 },
-                "EstadoVenta": {
+                "IdProducto": {
+                  "style": "form"
+                },
+                "Cantidad": {
+                  "style": "form"
+                },
+                "TotalVenta": {
                   "style": "form"
                 }
               }
@@ -438,29 +488,26 @@
           "content": {
             "multipart/form-data": {
               "schema": {
-                "required": [
-                  "EstadoVenta",
-                  "FechaVenta",
-                  "TotalVenta"
-                ],
                 "type": "object",
                 "properties": {
                   "IDVenta": {
                     "type": "integer",
                     "format": "int32"
                   },
-                  "FechaVenta": {
-                    "type": "string",
-                    "format": "date-time"
+                  "EstadoVenta": {
+                    "type": "string"
+                  },
+                  "IdProducto": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Cantidad": {
+                    "type": "integer",
+                    "format": "int32"
                   },
                   "TotalVenta": {
-                    "minimum": 0,01,
                     "type": "number",
                     "format": "double"
-                  },
-                  "EstadoVenta": {
-                    "maxLength": 20,
-                    "type": "string"
                   }
                 }
               },
@@ -468,13 +515,16 @@
                 "IDVenta": {
                   "style": "form"
                 },
-                "FechaVenta": {
+                "EstadoVenta": {
+                  "style": "form"
+                },
+                "IdProducto": {
+                  "style": "form"
+                },
+                "Cantidad": {
                   "style": "form"
                 },
                 "TotalVenta": {
-                  "style": "form"
-                },
-                "EstadoVenta": {
                   "style": "form"
                 }
               }
@@ -629,6 +679,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme.",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }
